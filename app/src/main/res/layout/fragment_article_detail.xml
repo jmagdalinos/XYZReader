@@ -23,7 +23,8 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?colorPrimary">
+        android:background="?colorPrimary"
+        android:elevation="4dp">
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/photo_container"

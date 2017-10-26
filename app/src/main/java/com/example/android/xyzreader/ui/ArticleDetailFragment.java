@@ -147,17 +147,18 @@ public class ArticleDetailFragment extends Fragment implements
                                 DateUtils.FORMAT_ABBREV_ALL).toString()
                                 + " by <font color='#ffffff'>"
                                 + mCursor.getString(ArticleLoader.Query.AUTHOR)
-                                + "</font>"));
+                                + "</font>", Html.FROM_HTML_MODE_COMPACT));
 
             } else {
                 // If date is before 1902, just show the string
                 subTitleView.setText(Html.fromHtml(
                         outputFormat.format(publishedDate) + " by <font color='#ffffff'>"
                         + mCursor.getString(ArticleLoader.Query.AUTHOR)
-                                + "</font>"));
+                                + "</font>", Html.FROM_HTML_MODE_COMPACT));
 
             }
-            bodyView.setText(Html.fromHtml(mCursor.getString(ArticleLoader.Query.BODY).replaceAll("(\r\n|\n)", "<br />")));
+            bodyView.setText(Html.fromHtml(mCursor.getString(ArticleLoader.Query.BODY).replaceAll
+                    ("(\r\n|\n)", "<br />"), Html.FROM_HTML_MODE_COMPACT));
             ImageLoaderHelper.getInstance(getActivity()).getImageLoader()
                     .get(mCursor.getString(ArticleLoader.Query.PHOTO_URL), new ImageLoader.ImageListener() {
                         @Override

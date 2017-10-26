@@ -177,12 +177,12 @@ public class ArticleListActivity extends AppCompatActivity implements
                                 System.currentTimeMillis(), DateUtils.HOUR_IN_MILLIS,
                                 DateUtils.FORMAT_ABBREV_ALL).toString()
                                 + "<br/>" + " by "
-                                + mCursor.getString(ArticleLoader.Query.AUTHOR)));
+                                + mCursor.getString(ArticleLoader.Query.AUTHOR), Html.FROM_HTML_MODE_COMPACT));
             } else {
                 holder.subtitleView.setText(Html.fromHtml(
                         outputFormat.format(publishedDate)
                         + "<br/>" + " by "
-                        + mCursor.getString(ArticleLoader.Query.AUTHOR)));
+                        + mCursor.getString(ArticleLoader.Query.AUTHOR), Html.FROM_HTML_MODE_COMPACT));
             }
             holder.thumbnailView.setImageUrl(
                     mCursor.getString(ArticleLoader.Query.THUMB_URL),
