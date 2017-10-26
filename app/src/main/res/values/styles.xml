@@ -1,0 +1,72 @@
+<!-- File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <!-- Theme for the entire application -->
+    <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <style name="Theme.Bacon.ArticleDetailActivity">
+    </style>
+    <!-- Title for the cards in the main activity -->
+    <style name="card_title_text">
+        <item name="android:textColor">@color/card_title_text</item>
+        <item name="android:textSize">@dimen/card_title_text_size</item>
+        <item name="android:layout_marginLeft">@dimen/text_margin</item>
+        <item name="android:layout_marginTop">@dimen/text_margin</item>
+        <item name="android:layout_marginBottom">@dimen/text_bottom_margin</item>
+    </style>
+
+    <!-- Subtitle for the cards in the main activity -->
+    <style name="card_subtitle_text">
+        <item name="android:textColor">@color/card_subtitle_text</item>
+        <item name="android:textSize">@dimen/card_subtitle_text_size</item>
+        <item name="android:layout_marginLeft">@dimen/text_margin</item>
+        <item name="android:layout_marginBottom">@dimen/text_bottom_margin</item>
+    </style>
+
+    <!-- Title for the article in the detail activity -->
+    <style name="article_title_text">
+        <item name="android:textColor">@color/article_title_text</item>
+        <item name="android:textSize">@dimen/article_title_text_size</item>
+        <item name="android:layout_marginLeft">@dimen/text_margin</item>
+        <item name="android:layout_marginBottom">@dimen/text_bottom_margin</item>
+    </style>
+
+    <!-- Subtitle for the article in the detail activity -->
+    <style name="article_subtitle_text">
+        <item name="android:textColor">@color/article_subtitle_text</item>
+        <item name="android:textSize">@dimen/article_subtitle_text_size</item>
+        <item name="android:layout_marginLeft">@dimen/text_margin</item>
+        <item name="android:layout_marginBottom">@dimen/text_bottom_margin</item>
+    </style>
+
+    <!-- Body for the article in the detail activity -->
+    <style name="body_text">
+        <item name="android:textColor">@color/article_subtitle_text</item>
+        <item name="android:textSize">@dimen/article_body_text</item>
+        <item name="android:layout_marginLeft">@dimen/text_margin</item>
+        <item name="android:layout_marginRight">@dimen/text_margin</item>
+        <item name="android:layout_marginTop">@dimen/body_text_margin</item>
+        <item name="android:layout_marginBottom">@dimen/body_text_margin</item>
+    </style>
+</resources>
